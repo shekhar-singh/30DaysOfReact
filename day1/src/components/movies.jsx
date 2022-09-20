@@ -6,13 +6,24 @@ class Movies extends Component {
     state = {  
         movies: getMovies()
     } ;
+
+    constructor(){
+        super();
+        console.log('App - Constructor', this);
+        // this.state = this.props.something;
+        
+    }
+    componentDidMount(){
+        this.setState({});
+        console.log("App - Mount");
+    }
     
     handleDelete = (movie) => {
         // console.log(movies);
         const movies = this.state.movies.filter(m => m._id !== movie._id);
         this.setState({ movies });
     };
-    render() { 
+    render() {  
         const {length: count} = this.state.movies;
         // if (this.state.movies.length === 0){
         if (count === 0){

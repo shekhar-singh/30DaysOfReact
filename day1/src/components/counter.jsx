@@ -13,7 +13,7 @@ class Counter extends Component {
     render() {
         return (
                            
-            <button className="btn btn-success btn-lg fa fa-heart fa-xl" onClick={this.handleLike}>{this.state.count}</button>      
+            <button className="btn btn-success btn-lg fa fa-heart-o fa-xl" onClick={this.handleLike}> {this.state.count}</button>      
 
         );
     }
