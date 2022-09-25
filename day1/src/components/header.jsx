@@ -4,7 +4,7 @@ class Header extends Component {
     state = {}
     render() {
         return (
-            <nav className='navbar navbar-expand-lg bg-dark'>
+            <nav className='navbar navbar-expand-lg navbar-light bg-dark'>
                 <a className='navbar-brand' href='#'></a>
             </nav>
         );
