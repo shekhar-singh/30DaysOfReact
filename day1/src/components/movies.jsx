@@ -25,7 +25,7 @@ class Movies extends Component {
     // this.state = this.props.something;
   }
   componentDidMount() {
-    console.log("App - Mount");
+    // console.log("App - Mount");
     const generes = [{ _id:"", name: "All Generes" }, ...getGenres()];
     this.setState({ movies: getMovies(), genres: generes });
   }
