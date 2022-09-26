@@ -1,6 +1,6 @@
 import React, { Component} from 'react';
 import Like from "./common/like";
-import TableHeader from './common/TableHeader';
+import TableHeader from './common/tableHeader';
 
 class MoviesTable extends Component {
   columns = [
