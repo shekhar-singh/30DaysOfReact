@@ -15,3 +15,6 @@ Day6: Saperate component for table body
 Day7: Router in react basics
 
 Day8: Fixing issue in React Router 6.4
+
+Day9: Playing with forms
+
