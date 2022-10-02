@@ -4,6 +4,10 @@ class LoginForm extends Component {
   username = React.createRef();
   password = React.createRef();
 
+  componentDidMount(){
+    this.username.current.focus();
+  };
+
   handleSubmit = (e) => {
     e.preventDefault();
     const username = this.username.current.value;
