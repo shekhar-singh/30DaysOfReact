@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import _ from 'lodash';
 import PropTypes from 'prop-types';
 
@@ -15,7 +16,7 @@ const Pagination = (props) => {
                 {pages.map(
                     page =>
                     <li key={page} className={ page === currentPage? "page-item active" : "page-item" }>
-                        <a className="page-link" onClick={()=>onPageChange(page)}>{page}</a></li>
+                        <Link className="page-link" onClick={()=>onPageChange(page)}>{page}</Link></li>
                     )
                 }
             </ul>

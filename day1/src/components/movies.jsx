@@ -2,13 +2,12 @@ import React, { Component } from "react";
 import { getMovies } from "../services/fakeMovieService";
 import { getGenres } from "../services/fakeGenreService";
 // import Counter from './counter';
-
-import Search from "./search";
 import Pagination from "./common/pagination";
 import { paginate } from "../utils/paginate";
 import ListGroup from "../utils/listGroup";
 import MoviesTable from "./moviesTable";
 import _ from 'lodash';
+import Search from './search';
 
 class Movies extends Component {
   state = {
@@ -73,7 +72,7 @@ class Movies extends Component {
 
     return (
       <>
-        <Search />
+       
         <div className="row">
           <div className="col-2">
             <h1>Genre</h1>
@@ -86,6 +85,7 @@ class Movies extends Component {
 
           <div className="col">
             <p>There are {filtered.length} movies in database</p>
+            <Search />
 
             <MoviesTable 
             movies={moviesArr} 
