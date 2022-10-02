@@ -7,6 +7,7 @@ import Movies from "./components/movies";
 import NotFound from './components/NotFound';
 import Customers from './components/Customers';
 import MoviesForm from './components/moviesForm';
+import LoginForm from './components/loginForm';
 
 function App() {
   return (
@@ -16,8 +17,9 @@ function App() {
 
     <Routes>        
       <Route path="/movies" exact element={<Movies/>} />
-      <Route path='/movies/:id' element={<MoviesForm/>} />
+      <Route path='/movies/:id/:title' element={<MoviesForm/>} />
       <Route path="/customers" element={<Customers/>} />
+      <Route path="/login" element={<LoginForm/>} />
       <Route path="/not-found" element={<NotFound/>} />
       <Route path="*" element={<NotFound />} />
 

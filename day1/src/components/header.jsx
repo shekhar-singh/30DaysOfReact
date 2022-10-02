@@ -21,7 +21,7 @@ class Header extends Component {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="nav navbar-nav">
             <li className="nav-item active">
-              <NavLink className="nav-link" to="/">
+              <NavLink className="nav-link" to="/movies">
                 Home <span className="sr-only">(current)</span>
               </NavLink>
             </li>
@@ -31,6 +31,11 @@ class Header extends Component {
               </NavLink>
             </li>
           </ul>
+          
+              <NavLink className="nav-link" to="/login">
+                Login
+              </NavLink>
+         
           
         </div>
       </nav>
