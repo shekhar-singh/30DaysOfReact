@@ -12,20 +12,18 @@ import LoginForm from './components/loginForm';
 function App() {
   return (
     <>
-    <Header/>
-    <div className='container'>
-
-    <Routes>        
-      <Route path="/movies" exact element={<Movies/>} />
-      <Route path='/movies/:id/:title' element={<MoviesForm/>} />
-      <Route path="/customers" element={<Customers/>} />
-      <Route path="/login" element={<LoginForm/>} />
-      <Route path="/not-found" element={<NotFound/>} />
-      <Route path="*" element={<NotFound />} />
-
-        {/* <Movies /> */}
-    </Routes>
-    </div>
+      <Header/>
+      <div className='container'>
+        <Routes>      
+          <Route path="/" exact element={<Movies/>} />  
+          <Route path="/movies" exact element={<Movies/>} />
+          <Route path='/movies/:id/:title' element={<MoviesForm/>} />
+          <Route path="/customers" element={<Customers/>} />
+          <Route path="/login" element={<LoginForm/>} />
+          <Route path="/not-found" element={<NotFound/>} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </div>
     </>
   );
 }
